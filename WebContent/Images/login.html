@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+ul {
+    font-size: 20pt;
+    list-style-type: none;
+
+    padding: 0;
+    width: 20%;
+    background-color: ghostwhite;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: lightblue;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: darkgray;
+    width: 100%;
+    color: white;
+}
+
+.dropbtn {
+    background-color: ghostwhite;
+    width: 100%;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20pt;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background-color: ghostwhite;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 20pt;
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    background-color: ghostwhite;
+    color: black;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    display: block;
+    text-align: center;
+    text-decoration-line: none;
+    width: 100%;
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: steelblue;
+}
+
+div2 {
+    border-radius: 5px;
+    border: 1px dotted black;
+    margin: auto;
+    width: 40%;
+    background-color: ghostwhite;
+    padding: 20px;
+    display: block;
+}
+
+.header {
+    background-color: ghostwhite;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid darkgray;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+</style>
+<body>
+        <ul>
+                <li><a href="C:\Users\504CLASS 01\Documents\second\home.html">HOME</a></li>
+                <li><a class="active" href="#home">LOGIN/JOIN</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="C:\Users\504CLASS 01\Documents\second\notice.html">NOTICE</a></li>
+                <li><a href="C:\Users\504CLASS 01\Documents\second\news.html">NEWS</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">GALLERY</button>
+                      <div class="dropdown-content">
+                          <a href="C:\Users\504CLASS 01\Documents\second\picture.html">Picture</a>
+                          <a href="C:\Users\504CLASS 01\Documents\second\video.html">Video</a>
+                      </div>
+                  </div>
+              </ul>
+              <br>
+              <div class="header">
+                  <h1>LOGIN</h1>
+              </div>
+              <br><br><br><br>
+
+<div2>
+  <form action="C:\Users\504CLASS 01\Documents\second\home.html">
+    <label for="id">ID</label>
+    <input type="text" id="id" name="id">
+
+    <label for="password">PASSWORD</label>
+    <input type="password" id="pwd" name="pwd">
+
+    <input type="submit" value="login">
+    
+    <button onclick="document.getElementById("ID").style.display='block'"
+    style='width:auto;'>LOGIN</button>
+    <a href="C:\Users\504CLASS 01\Documents\second\join.html">JOIN</a>
+  </form>
+</div2>
+<script>
+	var modal = document.getElementById("ID");
+	
+	window.onclick = function(event) {
+		if(event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+</body>
+</html>
