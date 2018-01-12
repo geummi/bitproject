@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    font-size: 20pt;
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+    background-color: ghostwhite;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: lightblue;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: darkgray;
+    width: 100%;
+    color: white;
+}
+
+img {
+    display: block;
+    width: 45%;
+    opacity: 0.5;
+    margin: 0 0 0 700px;
+}
+
+.dropbtn {
+    background-color: ghostwhite;
+    width: 100%;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20pt;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background-color: ghostwhite;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 20pt;
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    background-color: ghostwhite;
+    color: black;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+    
+  <li><a class="active" href="#home">HOME</a></li>
+  <li><a href="C:\Users\504CLASS 01\Documents\second\login.html">LOGIN/JOIN</a></li>
+  <li><a href="">ABOUT</a></li>
+  <li><a href="C:\Users\504CLASS 01\Documents\second\notice.html">NOTICE</a></li>
+  <li><a href="C:\Users\504CLASS 01\Documents\second\news.html">NEWS</a></li>
+  <div class="dropdown">
+    <button class="dropbtn">GALLERY</button>
+        <div class="dropdown-content">
+            <a href="C:\Users\504CLASS 01\Documents\second\picture.html">Picture</a>
+            <a href="C:\Users\504CLASS 01\Documents\second\video.html">Video</a>
+        </div>
+    </div>
+</ul>
+<img src="gongyoo.jpg" alt="gongyoo">
+
+
+</body>
+</html>
